@@ -1,0 +1,30 @@
+openapi: 3.0.0
+info:
+  title: User Service API
+  version: 1.0.0
+  description: API for managing users and reservations
+paths:
+  /:
+    get:
+      summary: Get details from /, methods=[GET]
+      responses:
+        '200':
+          description: Successful response
+  /user/:
+    get:
+      summary: Get details from /user/, methods=[GET]
+      responses:
+        '200':
+          description: Successful response
+  /user/<id>:
+    get:
+      summary: Get details from /user/<id>, methods=[GET]
+      responses:
+        '200':
+          description: Successful response
+  /reservations/<userid>:
+    get:
+      summary: Get details from /reservations/<userid>, methods=[GET]
+      responses:
+        '200':
+          description: Successful response
